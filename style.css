@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding : 0;
+}
+.music{
+    display: none;
+}
+#game{
+    display: none;
+    background-image: url("./dead.gif");
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    background-color: #ff3838;
+    padding: 0.5rem;
+    height: 2.5rem;
+ 
+}
+.page-action{
+    background-color: #ff3838;
+    height: 1.5rem;
+    display: flex;
+    font-size: small;
+    
+    align-items: center;
+}
+.page-elem{
+    margin-left:0.5rem;
+    color : #ffffff;
+}
+.formula-action{
+    background-color: red;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    background-color: black;
+    
+}
+
+  
+
+.address-bar > input{
+    display: inline-block;
+    width : 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border : none;
+    outline : none;
+    border-radius: 1px;
+    padding: 0.2rem;
+    
+}
+.formula-icon{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+   
+}
+
+.formula-bar > input{
+    border : none ;
+    outline : none;
+    display:  inline-block;
+    padding-left:  0.5rem;
+    padding: 0.2rem;
+    border : none;
+    outline : none;
+    border-radius: 1px;
+    width: calc(100vw - 0.5rem - 1.5rem - 0.5rem - 1rem - 2.5rem);
+}
+
+canvas{
+    border-left : 10px solid red;
+    border-right : 10px solid red;
+}
+.tool-action{
+    background-color: black;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+.tool-action > *{
+    margin : 0.5rem;
+}
+
+.material-icons{
+    color : white;
+    cursor: pointer;
+}
+.tool-action > select{
+    padding : 0.2rem;
+    outline: none;
+    border : none;
+    border-radius: 2px;
+}
+.sheet-action{
+    background-color: black;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.sheet-add{
+    margin:0.5rem;
+    
+}
+.sheet-cont{
+    font-size:  small;
+}
+.grid-action{
+    height: calc(100vh - 2.5rem - 1.5rem - 2.5rem - 2rem - 2.5rem);
+    background-color: #dff9fb;
+    position: relative;
+    overflow: scroll;
+}
+
+.dummy-box{
+    background-color: #ff3838;
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    z-index: 5;
+}
+
+.col-cont{
+   top : 2rem;
+    width: 2rem;
+    position : sticky;
+    left:0;
+
+}
+.cell-cont{
+    top:0;
+    left : 2rem;
+    position:absolute;
+}
+.row-cont{
+    margin-top:0;
+    margin-left:2;
+
+    height: 2rem;
+    
+    display: flex;
+
+    position: sticky;
+    z-index: 3;
+    top: 0rem;
+    left : 2rem;
+    
+}
+.sheet-folder-cont  :hover{
+  cursor: pointer;
+}
+.sheet-folder-cont{
+    overflow: auto;
+    align-items: center;
+    display: flex;
+    gap : 1rem;
+}
+.sheet{
+    color: white;
+    margin:0.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    font-size: 0.9rem;
+}
+
+.newcol{
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, .3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.newrow{
+    height: 2rem;
+    width : 5rem;
+ 
+    border: 1px solid rgba(255, 0, 0, .3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+
+}
+.ncol{
+    
+    display: flex;
+    margin-left:2;
+    height: 2rem;
+    display: flex;
+}
+.eye{
+    position: sticky;
+    left: calc(100vw - 5rem);
+}
+
+.normal{
+    height : 2rem;
+    width:2rem;
+   
+   
+}
+.ghoul{
+    height: 7rem;
+    width: 7rem;
+}
+.color_prop{
+  position: relative;
+}
+.color_prop > input{
+    opacity: 0;
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+.cell{
+    height: 2rem;
+    width : 5rem;
+
+    border: 1px solid rgba(255, 0, 0, .3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+   
+    
+    font-size: small;
+    outline: none;
+
+}
+
+.sheet-cont{
+    color : white;
+}
